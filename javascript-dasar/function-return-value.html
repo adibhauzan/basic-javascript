@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Return Value</title>
+</head>
+<body>
+    
+    <script>
+
+        function sayHello(firstName, lastName){
+            const say = `Hello ${firstName} ${lastName}`;
+        return say;
+        }
+
+        const result = sayHello("Adib", "Hauzan");
+        document.writeln(result);
+
+
+        function getFinalScore(value){
+            if (value >= 85) {
+                return "A";
+            } else if(value >= 75) {
+                return "B";
+            }else if(value >= 65) {
+                return "C";
+            }else if(value >= 50) {
+                return "D";
+            }else if(value >= 35) {
+                return "E";
+            }else {
+                return "Mungkin Anda Salah Jurusan";
+            }
+        }
+
+        const finalScore = getFinalScore(84);
+        document.writeln(`<p>Nilai Anda adalah ${finalScore} </p>`);
+
+        function isContains(array, searchValue) {
+            for(const element of array) {
+                if(element === searchValue){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        const array = [1,32,412,4,43,56,12,413,234,65];
+        const search = 32;
+        const found = isContains(array, search);
+        document.writeln(`<p>${found}</p>`);
+
+        
+
+        console.log(finalScore);
+    </script>
+</body>
+</html>

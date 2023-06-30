@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optional Parameter</title>
+  </head>
+  <body>
+
+    <!-- pada php saat pemanggilan function, value parameternya harus dipanggil -->
+    <script>
+      function sayHello(firstName, middleName, lastName) {
+        console.log(firstName);
+        console.log(middleName);
+        console.log(lastName);
+      }
+
+      sayHello("Adib"); // output : "Adib" , undefined, undefined
+      sayHello("Adib", "Hauzan"); // output : "Adib" , "Hauzan", undefined
+      sayHello("Adib", "Hauzan", "Sofyan"); // output : "Adib" , "Hauzan", "Sofyan"
+
+
+
+      //sangat TIDAK DISARANKAN apabila value yang dipanggil melebihi value parameter functionnya
+      sayHello("Adib", "Hauzan", "Sofyan", "Bujang"); // output : "Adib" , "Hauzan", "Sofyan", "Bujang"
+    </script>
+  </body>
+</html>

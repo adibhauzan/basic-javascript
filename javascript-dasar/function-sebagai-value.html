@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Di Variabel</title>
+</head>
+<body>
+    <script>
+        function sayHello(name){
+            document.writeln(`<p>Hello ${name}!</p>`);
+        }
+
+        let hello = sayHello;
+
+        sayHello("Adib");
+        hello("bujang");
+
+        let say = sayHello;
+        
+        function giveMeName(callback){
+            callback("Adib");
+        }
+
+        giveMeName(sayHello);
+        giveMeName(say);
+
+    </script>
+</body>
+</html>

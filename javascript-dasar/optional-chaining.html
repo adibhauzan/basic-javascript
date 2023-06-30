@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Chaining</title>
+</head>
+<body>
+    
+
+    <script>
+        const person = {
+            firstName : "Adib Hauzan",
+            address : {
+                country : "indonesia"
+            }
+        };
+
+        const country = person?.address?.country;
+
+        const bujang = person?.firstName;
+
+        document.writeln(`SUKSES`);
+
+        document.writeln(`<p>${country}</p>`);
+
+        document.writeln(`<p>${bujang}</p>`);
+
+        document.writeln(`SUKSES`);
+
+        console.log(person);
+    </script>
+</body>
+</html>

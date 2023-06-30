@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>With Statement</title>
+  </head>
+  <body>
+    
+      <!-- with statement tidak direkomendasikan untuk digunakan -->
+      <script>
+      const person = {
+        firstName: "Adib",
+        middleName: "Hauzan",
+        lastName: "Sofyan",
+      };
+
+      //tanpa with statement
+      console.log(person.firstName);
+      console.log(person.middleName);
+      console.log(person.lastName);
+
+      console.warn("break");
+
+
+      //dengan with statement
+      with (person) {
+        console.log(firstName);
+        console.log(middleName);
+        console.log(lastName);
+      }
+
+
+    </script>
+  </body>
+</html>

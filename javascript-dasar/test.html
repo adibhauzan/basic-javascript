@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let bujang = undefined;
+
+        let result = bujang;
+
+        if (result === undefined || result === null) {
+            result = "nilai default";
+        }
+
+        document.writeln(result);
+        console.log(`<p>${result}</p>`);
+
+        result = bujang ?? "nilai default";
+        document.writeln(`<p>${result}<p>`);
+
+    </script>
+</body>
+</html>

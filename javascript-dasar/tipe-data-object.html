@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Object</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+        const bioData = {};
+
+        bioData["nama"] = ["Adib Hauzan Sofyan"];
+        bioData["umur"] = ["21"];
+        bioData["Profesi"] = ["Programmer Zaman Now"];
+        bioData["cita-cita"] = ["FullStack Web Developer"];
+
+        console.table(bioData);
+
+        const bioData2 = {
+            nama: "Adib Hauzan Sofyan",
+            umur: "21",
+            profesi: "Programmer Zaman Now",
+            "cita-cita" : "fullstack web developer"
+        };
+        
+        console.table(bioData2);
+
+        console.info(`Nama: ${bioData2.nama}`);
+        console.info(`Umur: ${bioData2.umur}`);
+        console.info(`Profesi: ${bioData2.profesi}`);
+        // console.info(`Cita - cita: ${bioData2.["cita-cita"]}`); // salah
+        console.info(`Cita - cita: ${bioData2["cita-cita"]}`); // benar (tidak menggunakan "." setelah ${bioData2)
+        
+    </script>
+</body>
+</html>

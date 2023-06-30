@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator In</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        firstName: "Adib",
+        lastName: "Sofyan",
+      };
+
+      if ("firstName" in person) {
+        alert(`hello ${person.firstName}`);
+      } else {
+        alert("Maneh SAHA ANYING GOBLOG!");
+      }
+
+      console.log(person);
+
+      const student = {
+        firstName: "Adib",
+        middleName: undefined,
+        lastName: "Sofyan",
+      };
+
+      if ("middleName" in student) {
+        alert(`hello ${student.middleName}`);
+      } else {
+        alert("Halo Student");
+      }
+    </script>
+  </body>
+</html>

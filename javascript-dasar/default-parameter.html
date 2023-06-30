@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function register(name, gender = "UNKNOWN",) {
+            console.log(name);
+            console.log(gender);
+            console.warn("BREAK");
+        }
+
+        register("Adib"); // output : "adib", "UNKNOWN";
+
+        register("Adib", "Laki - Laki"); // output : "adib", "Laki - Laki";
+
+        register("Adib", undefined); // output : "adib", "UNKNOWN";
+
+        register("Adib", null); // output : "adib", null;
+
+        register("Adib", NaN); // output : "adib", NaN;
+    </script>
+</body>
+</html>
